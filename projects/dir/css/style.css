@@ -1194,3 +1194,16 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	resize: none;
 	margin-bottom: 50px;
 }
+	/* General styling for the gallery */
+		.gallery__item img {
+			width: 100%;
+			height: auto;
+			display: block;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		/* Hover effect */
+		.gallery__item:hover img {
+			transform: scale(1.1); /* Zoom in */
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+		}
